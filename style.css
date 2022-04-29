@@ -1,24 +1,64 @@
 *{
     list-style: none;
     margin: 0;
+    border: 0;
 }
-
-section{
-    display: flex;
-    justify-content: left;
-    height: 150px;
-    width: auto;
-}
-
+/* création de la barre de navigation */
 nav {
     display: grid;
     margin : 10rem;
+    /*
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 28.5% 14.3% 14.3% 14.3% 14.3% 14.3%;
+    */
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    height: 50 em;
+}
+/* mise en place du logo*/
+.herisson {
+    /*
+    grid-column-start: 1;
+    grid-row-start: 1;
+    */
+    width: 100%;
+    border-radius: 50%;
 }
 
-li{
-    border: 2px solid black;
+ul{
     color: green;
-    height: 110 px;
-    display: block;
+    height: 250 px;
     text-align: center;
+}
+
+li a {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid black;
+    width: 100%;
+}
+
+li b{
+    grid-area: 2 4 2 5;
+    border: 1px solid black;
+    width: 100%;
+}
+li c {
+    grid-area: 2 5 2 6;
+    border: 1px solid black;
+    width: 100%;
+}
+
+li d {
+    grid-area: 2 6 2 7;
+    border: 1px solid black;
+    width: 100%;
+}
+
+li e {
+    grid-area: 2 7 2 8;
+    border: 1px solid black;
+    width: 100%;
 }
