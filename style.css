@@ -1,0 +1,24 @@
+*{
+    list-style: none;
+    margin: 0;
+}
+
+section{
+    display: flex;
+    justify-content: left;
+    height: 150px;
+    width: auto;
+}
+
+nav {
+    display: grid;
+    margin : 10rem;
+}
+
+li{
+    border: 2px solid black;
+    color: green;
+    height: 110 px;
+    display: block;
+    text-align: center;
+}
