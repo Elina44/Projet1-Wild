@@ -94,7 +94,7 @@ p {
 }
 
 .logofooter {
-       border-radius: 150rem;
+    border-radius: 150rem;
 }
 
 .titrelogo {
@@ -103,5 +103,44 @@ p {
 /*pour mettre le texte sous le logo. Il faut créer une div en HTML pour lier les 2*/
 .logoettexte {
     position: relative;
-  text-align: center;
+    text-align: center;
  }
+
+ /*page 1:*/
+ .lune{
+    display: block;
+    width: 60%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+ }
+
+ .liencalendrierlunaire {
+     text-align: center;
+     text-decoration: underline solid black;
+ }
+
+ .calendrier{
+     color: green;
+ }
+
+h3{
+    font-size: 30px;
+    margin: 70px 50px 30px 50px;
+    text-align: center;
+}
+
+.imagerotation{
+    display: flex;
+    width: auto;
+    margin: 10px 40px 150px 40px;
+}
+
+.haut{
+    width: 50%;
+}
+
+.bas{
+    width: 50%;
+}
