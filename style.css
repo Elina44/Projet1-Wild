@@ -1,64 +1,70 @@
 *{
     list-style: none;
     margin: 0;
-    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    color: black;
 }
 /* création de la barre de navigation */
 nav {
     display: grid;
-    margin : 10rem;
-    /*
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 28.5% 14.3% 14.3% 14.3% 14.3% 14.3%;
-    */
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(7, 1fr);
-    height: 50 em;
+    grid-template-columns: repeat(6, 1fr);
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10rem;
+    justify-items: center;
+    font-size: 40px;
 }
 /* mise en place du logo*/
 .herisson {
-    /*
-    grid-column-start: 1;
-    grid-row-start: 1;
-    */
-    width: 100%;
-    border-radius: 50%;
+    grid-column: span 1.5;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
 }
 
-ul{
+.navbar{
+    grid-column-start: 4 / 8;
     color: green;
-    height: 250 px;
+}
+
+.logo {
+    max-width: 100%;
+    border-radius: 150rem;
+    grid-row: span 2;
+}
+
+h1{
+    padding: 100px;
     text-align: center;
 }
 
-li a {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border: 1px solid black;
-    width: 100%;
+.balançoire{
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
-li b{
-    grid-area: 2 4 2 5;
-    border: 1px solid black;
-    width: 100%;
+/*pour le footer*/
+footer {
+    display: flex;
+    background-color: rgb(44, 190, 142);
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 50px;
 }
-li c {
-    grid-area: 2 5 2 6;
-    border: 1px solid black;
-    width: 100%;
-}
-
-li d {
-    grid-area: 2 6 2 7;
-    border: 1px solid black;
-    width: 100%;
+/*pour que les images prennent la taille du footer*/
+footer img{
+    height: 100px;
 }
 
-li e {
-    grid-area: 2 7 2 8;
-    border: 1px solid black;
-    width: 100%;
+p {
+    
 }
