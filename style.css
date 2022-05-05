@@ -6,6 +6,7 @@
     text-decoration: none;
     color: black;
 }
+
 /* création de la barre de navigation */
 nav {
     display: grid;
@@ -14,10 +15,14 @@ nav {
     text-align: center;
     align-items: center;
     padding: 10px;
-    margin: 10rem;
+    margin: 0 10rem 10rem 10rem;
     justify-items: center;
     font-size: 40px;
 }
+nav div, nav p{
+    padding-left: 15px;
+}
+
 /* mise en place du logo*/
 .herisson {
     grid-column: span 1.5;
@@ -57,8 +62,7 @@ footer {
     background-color: rgb(44, 190, 142);
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    margin-top: 50px;
+    height: 250px;
     font-size: 25px;
 }
 /*pour que les images prennent la taille du footer*/
@@ -73,13 +77,16 @@ body {
 .texte {
     font-size: 40px;
     margin: 30px;
+    margin-bottom: 100px;
     text-indent: 100px;
+    text-align: center;
     /*pour rappeler la police qu'on veut changer*/
     font-family: 'Oswald', sans-serif;
     }
 
 p {
     font-size: 27px;
+    margin: 25px 50px 10px 50px;
 }
 
 .menufooter{
