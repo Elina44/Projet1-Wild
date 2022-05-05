@@ -48,7 +48,7 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
 }
 
 /*pour le footer*/
@@ -59,12 +59,42 @@ footer {
     justify-content: space-between;
     height: 100px;
     margin-top: 50px;
+    font-size: 25px;
 }
 /*pour que les images prennent la taille du footer*/
 footer img{
-    height: 100px;
+    height: 80px;
 }
 
-p {
-    
+body {
+    text-align: justify;
 }
+
+.texte {
+    font-size: 40px;
+    margin: 30px;
+    text-indent: 100px;
+    /*pour rappeler la police qu'on veut changer*/
+    font-family: 'Oswald', sans-serif;
+    }
+
+p {
+    font-size: 27px;
+}
+
+.menufooter{
+    font-size: 15px;
+}
+
+.logofooter {
+       border-radius: 150rem;
+}
+
+.titrelogo {
+    font-size: 15px;
+}
+/*pour mettre le texte sous le logo. Il faut créer une div en HTML pour lier les 2*/
+.logoettexte {
+    position: relative;
+  text-align: center;
+ }
