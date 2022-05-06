@@ -24,13 +24,14 @@ nav div, nav p{
 /* mise en place du logo*/
 .herisson {
     grid-column: span 1.5;
-    width: 300px;
+    width: 200px;
     margin-top: 50px;
 }
 
 .navbar{
     grid-column-start: 4 / 8;
     color: green;
+    font-size: 16px;
 }
 
 .logo {
@@ -54,22 +55,22 @@ h1{
     margin-bottom: 70px;
 }
 
+.paragraphe {
+    text-align: justify;
+    margin: 0 15px 0 15px;
+    font-size: 16px; 
+}
+
 /*pour le footer*/
 footer {
     display: flex;
     background-color: rgb(44, 190, 142);
     align-items: center;
-    justify-content: space-between;
-    height: 250px;
-    font-size: 25px;
+    justify-content: space-between;    
 }
 /*pour que les images prennent la taille du footer*/
 footer img{
-    height: 80px;
-}
-
-body {
-    text-align: justify;
+    height: 50px;
 }
 
 .texte {
@@ -82,10 +83,7 @@ body {
     font-family: 'Oswald', sans-serif;
     }
 
-p {
-    font-size: 16px;
-    margin: 0;
-}
+
 
 .menufooter{
     font-size: 15px;
@@ -132,7 +130,7 @@ h3{
 .imagerotation{
     display: flex;
     width: auto;
-    margin: 10px 40px 150px 40px;
+    margin: 10px 40px 70px 40px;
 }
 
 .haut{
@@ -157,7 +155,13 @@ h4{
     margin: 30px 50px 30px 50px;
 }
 
-/*page 2 rotation des cultures
+section{
+    padding: 20px;
+    /*pour faire un alinéa*/
+    text-indent: 5em;
+}
+
+/*page 2 présentation des cultures
 mise en place du tableau*/
 .plantes {
     display: grid;
