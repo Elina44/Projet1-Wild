@@ -1,5 +1,5 @@
 *{
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
@@ -152,7 +152,7 @@ h2{
 h4{
     font-size: 20px;
     text-align: justify;
-    margin: 30px 50px 30px 50px;
+    margin: 30px 50px 10px 50px;
 }
 
 section{
@@ -171,7 +171,7 @@ mise en place du tableau*/
     margin: 50px;
 }
 
-.toto {
+.parapage2 {
     height: 200px;
 }
 /*1ere colonne racines*/
@@ -271,4 +271,21 @@ mise en place du tableau*/
 .textepage2{
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
+}
+
+/*mise en page de la page3*/
+/*pour supprimer alinéa des puces*/
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding-left: 16px;
+}
+
+li::before{
+    content: icon;
+    padding-right: 8px;
+    color: green;
 }
