@@ -109,7 +109,7 @@ p {
  /*page 1:*/
  .lune{
     display: block;
-    width: 60%;
+    width: 50%;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -143,4 +143,98 @@ h3{
 
 .bas{
     width: 50%;
+}
+/*page 2 rotation des cultures
+mise en place du tableau*/
+.plantes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    grid-gap: 40px;
+    width: 100%;
+    height: 220rem;
+    margin: 15px 20px 30px 20px;
+}
+/*1ere colonne racines*/
+.pivoine{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.texteracines{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/*2ème colonne: texte en haut et image en bas couvrantes*/
+.couviolette{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.textecouvrantes{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+/*3è colonne grimpantes*/
+.vigne{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.textegrimpantes{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+/*4è colonne persistantes*/
+.fusain{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+ 
+.textepersistantes{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    width: 100%;
+    height: auto;
+}
+/*5 ècolonne insectes*/
+.marjolaine{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+    z-index: -1;
+}
+
+.texteinsectes{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    width: 100%;
+    height: auto;
+}
+.textepage2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
 }
