@@ -281,11 +281,21 @@ ul{
 }
 
 li{
-    padding-left: 16px;
+    padding-left: 4em;
+    text-align: justify;
 }
 
 li::before{
-    content: icon;
+    content: 🍀;
     padding-right: 8px;
-    color: green;
+}
+
+.rotation{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px 35px 30px 35px;
+}
+
+table img{
+    border-radius: 80px;
 }
