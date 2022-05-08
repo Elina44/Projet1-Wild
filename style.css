@@ -161,6 +161,18 @@ section{
     text-indent: 5em;
 }
 
+/*les titres des images*/
+h5{
+    font-size: 25px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+
+.textepage2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
 /*page 2 présentation des cultures
 mise en place du tableau*/
 .plantes {
@@ -268,14 +280,12 @@ mise en place du tableau*/
     height: auto;
 }
 
-.textepage2{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em;
-}
+
 
 /*mise en page de la page3*/
 /*pour supprimer alinéa des puces*/
 ul{
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -285,17 +295,20 @@ li{
     text-align: justify;
 }
 
-li::before{
-    content: 🍀;
-    padding-right: 8px;
+.schemarotation{
+    height: 400px;
+    width: 700px;
 }
 
 .rotation{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction:row-reverse;
     margin: 10px 35px 30px 35px;
 }
 
+
 table img{
     border-radius: 80px;
+    width: 50px;
 }
+
