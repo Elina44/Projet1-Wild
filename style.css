@@ -21,6 +21,8 @@ nav div, nav p{
     padding-left: 15px;
 }
 
+
+*/
 /* mise en place du logo*/
 .herisson {
     grid-column: span 1.5;
@@ -194,6 +196,16 @@ mise en place du tableau*/
     height: 300px;
     border-radius: 150px;
 }
+/*pour mettre un peu de transparence qd la souris passe dessus*/
+.plantes img:hover {
+    opacity:0.8;
+    transition: opacity 0.9s;
+}
+
+
+
+
+
 
 .texteracines{
     grid-column: 1 / 2;
@@ -312,3 +324,83 @@ table img{
     width: 50px;
 }
 
+/*mise en page page 4*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr 3fr 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 25px;
+    width: 100%;
+}
+
+.jardinenhauteur {
+
+}
+
+.jardinenhauteurtexte{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.fraiseraie{
+    grid-row: 1;
+    grid-column: 3;
+    width: 200px;
+}
+
+.engraisbio{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.engraisbiotexte{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.orties{
+    grid-row: 2;
+    grid-column: 3;
+    width: 200px;
+}
+
+.assodesplantes{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.assodesplantestexte{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.oeillet{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.economies{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.economiestexte{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.paillage{
+    grid-row: 4;
+    grid-column: 3;
+    width: 200px;
+}
+
+.fuirlesnuisibles{
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.fuirlesnuisiblestexte{
+    grid-row: 5;
+    grid-column: 2;
+}
