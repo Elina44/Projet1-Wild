@@ -227,7 +227,10 @@ h3{
 /*pour tourner les image en responsive*/
 @media screen and (max-width: 730px) and (min-width: 300px) {
     .imagerotation {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        
     }
 }
 
@@ -247,7 +250,7 @@ h4{
     margin: 30px 50px 10px 50px;
 }
 
-section{
+.page2-texte {
     padding: 20px;
     /*pour faire un alinéa*/
     text-indent: 5em;
@@ -267,6 +270,7 @@ h5{
 
 /*page 2 présentation des cultures
 mise en place du tableau*/
+
 .plantes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -381,6 +385,33 @@ mise en place du tableau*/
     width: 100%;
     height: auto;
 }
+/*mise en responsive page 2 avec passage de 3 à 2 images puis à 1 image*/
+ @media screen and (max-width: 930px) {
+    .plantes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+        gap: 10px;
+        width: auto;        
+    }
+    .page2-texte {
+        padding: 15px;
+        text-indent: 0%;
+    }
+    .parapage2 {
+        height: 80px;
+        text-align: justify;
+    }
+    .textepage2{
+        padding: 35px;
+        text-align: center;
+    }
+    .liens{/*pour faire disparaître le menu dans le footer*/
+        display: none;
+    }
+} 
+
+
+
 
 
 

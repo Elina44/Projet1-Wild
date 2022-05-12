@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!--sur google, choisir la police et copier le lien proposé html ici et copier l'autre partie CSS et le mettre dans la balise souhaitée-->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <!--pour mettre favicon cad le logo dans l'onglet de navigation-->
     <link rel="shortcut icon" type="image/png" href="/Images/favicon-ConvertImage.png">  
+    <!--Idem mais pour apple-->
+    <link rel=”apple-touch-icon” sizes=180×180” href=”/apple-touch-icon-180×180.png>
+    <!--sur google, choisir la police et copier le lien proposé html ici et copier l'autre partie CSS et le mettre dans la balise souhaitée-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!--Etape 1 : lien téléchargé sur fontawesome pour choisir une icône pour le menu burger-->
+    <script src="https://kit.fontawesome.com/28e1b819a1.js" crossorigin="anonymous"></script>
+    <title>Le jardin des malins</title>
     <title>Le jardin des malins</title>
 </head>
 
 <body> 
  
-    <nav>
+    <nav class="navbar-desktop">
         <div class="herisson">
             <img src="Images/hérisson.jpg" class="logo" alt="photo de hérisson">
         </div>
@@ -24,7 +29,21 @@
         <p class="e navbar"><a href="page4.html">Jardiner malin</a></p>
     </nav>
 
-    <section>
+    <!--Pour créer le menu burger-->
+    <nav class="navbar-mobile">
+        <!--Etape 2: lien donné par fontawesome pour le choix de l'image qui va apparaître pour faire le menu-->
+        <i class="fa-solid fa-bars"></i>
+        <div class="nav-list-mobile">
+            <p class="a navbar">Bienvenue</p>
+            <p class="b navbar"><a href="page1.html">Jardiner avec la Lune</a></p>
+            <p class="c navbar"><a href="page2.html">Choix des plantes</a></p>
+            <p class="d navbar"><a href="page3.html">Rotation des cultures</a></p>
+            <p class="e navbar"><a href="page4.html">Jardiner malin</a></p>
+        </div>
+    </nav>
+
+
+    <section class="page2-texte">
         <h1>Pourquoi est-ce important ?</h1>
         <p>En fonction de la région, des températures, de l'exposition du soleil et/ou du vent, du type de sol, les plantes n'ont pas les mêmes besoins. 
             De même, les périodes de floraison, l'entretien et les périodes de cueillettes sont aussi à prendre en considération.</p>
@@ -66,7 +85,7 @@
         </div>
 
         <div class="couvrantes">
-            <h5>Les couvre-sol</h5>
+            <h5>Les plantes couvre-sol</h5>
             <img src="Plantes/couvrante.jpg" class="couviolette" alt="photo aubriète violette">
             <div class="textecouvrantes">
                 <p class="parapage2">
@@ -96,7 +115,7 @@
         </div>
 
         <div class="proinsectes">
-            <h5>Les plantes pour les insectes</h5>
+            <h5>Les plantes favorisant les pollinisateurs</h5>
             <img src="Plantes/marjolaine.webp" class="marjolaine" alt="photo de marjolaine">
             <div class="texteproinsectes">
                 <p class="parapage2">
@@ -106,7 +125,7 @@
         </div>
 
         <div class="antiinsectes">
-            <h5>Les plantes répulsives</h5>
+            <h5>Les plantes répulsives insectes et autres</h5>
             <img src="Plantes/basilic.jpg" class="basilic" alt="photo de basilic">
             <div class="texteantiisectes">
                 <p class="parapage2">
