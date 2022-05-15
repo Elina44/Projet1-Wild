@@ -10,7 +10,7 @@
 /* création de la barre de navigation */
 nav {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     text-align: center;
     align-items: center;
     padding: 10px;
@@ -562,6 +562,80 @@ td {
     align-self: center;
     justify-self: center;
 }
+
+/*Mise en page de la page 5*/
+#todo-list input{/*style de l'input avec bordure en pointillée*/
+    width: 100%;
+    color: rgb(44, 43,43);
+    font-size: 2rem;
+    border: 1px solid grey;
+    padding: 1rem;
+    border: 1px dashed rgb(7, 226, 7);/*couleur de bordure*/
+    border-width: 0px 0px 1px 0px; /*ligne inférieure seulement*/
+}
+
+#todo-list{
+    background-color: bisque;
+    color: #1E2337;
+    width: 75%;
+    padding: 2rem;
+}
+
+#form{
+    display: flex;/* flex pour permettre de mettre l'input et le bouton sur la même ligne*/
+}
+
+button{ /*forme du bouton, la carré*/
+    border: none;
+    width: 4rem;
+    height: 4rem;
+}
+
+
+/*création de la class pour JS pour la particularité de rayer la tâche effectuée*/
+.done{
+    text-decoration: line-through;
+}
+
+
+/*Mise en forme des items crééent avec le JS*/
+.item p{
+    flex: 1;/*pour prendre le plus de place possible*/
+    padding: 2rem;
+}
+
+.item{
+    text-align: justify;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: rgb(222, 221, 221);
+    color: rgb(105, 19, 105);
+    display: flex;/*pour aligner le <p> et les boutons*/
+    align-items: center;
+}
+
+.item button{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.item button.btn-archive{
+    font-size: 2rem;
+    background-color: rgb(71, 237, 71);
+}
+
+.item button.btn-delete{
+    font-size: 2rem;
+    background-color: red;
+}
+
+
+
+
+/*Fin de la dernière page*/
+
+
+
 
 
 /*création du responsive pour afficher me menu burger*/
