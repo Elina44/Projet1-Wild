@@ -356,7 +356,8 @@ td {
 .fraiseraie{
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    width: 100%;
+    width: 75%;
+    height: 75%;
     align-self: center;
     justify-self: center;
 }
@@ -382,7 +383,8 @@ td {
 .orties{
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    width: 100%;
+    width: 75%;
+    height: 75%;
     align-self: center;
     justify-self: center;
 }
@@ -407,7 +409,8 @@ td {
 .oeillet{
     grid-column: 3 / 4;
     grid-row: 3 / 4;
-    width: 100%;
+    width: 75%;
+    height: 90%;
     align-self: center;
     justify-self: center;
 }
@@ -432,7 +435,8 @@ td {
 .paillage{
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-    width: 100%;
+    width: 75%;
+    height: 75%;
     align-self: center;
     justify-self: center;
 }
@@ -457,9 +461,10 @@ td {
 .cafe{
     grid-column: 3 / 4;
     grid-row: 5 / 6;
-    width: 100%;
+    width: 75%;
     align-self: center;
     justify-self: center;
+    height: 95%;
 }
 
 /* Page 5 */
