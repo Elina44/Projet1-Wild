@@ -10,7 +10,7 @@
 /* création de la barre de navigation */
 nav {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     text-align: center;
     align-items: center;
     padding: 10px;
@@ -27,17 +27,7 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
   }
-  /*
-  /* On screens that are 700px wide or less, make the menu links stack on top of each other instead of next to each other 
-  @media screen and (max-width: 700px) {
-    .nav {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: repeat (6 1fr);
-      width: 100%;
-    }
-  }
-*/
+
 nav div, nav p{
     padding-left: 15px;
 }
@@ -63,50 +53,7 @@ nav div, nav p{
     grid-row: span 2;
 }
 
-/*mise en place du menue burger pour le responsive*/
-
-.nav-list-mobile {
-    position: fixed;
-    top: -50vh;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    justify-content: space-around;
-    text-align: center;
-    /*pour que le passage du menu normal au menu responsive se fasse en douceur*/
-    transition: 0.5s;
-    background-color: white;
-}
-
-.navbar-mobile{
-    display: none;
-}
-
-.nav-list-mobile a {
-    color: green;
-    font-weight: 400;
-}
-
-.navbar-mobile i{
-    /*pour qu'il se place au dessus de tous les autres éléments*/
-    z-index: 999;
-    /**/
-    font-size: 50px;
-    position: fixed;
-    top: 10px;
-    right: 15px;
-    color: green;
-}
-
-.list-visible{
-    top: 0;
-}
-
-
-
-
+/*mise en page de la page Home*/
 h1{
     margin-bottom: 50px;
     text-align: center;
@@ -128,46 +75,6 @@ h1{
     font-size: 16px; 
 }
 
-/*pour le footer*/
-footer {
-    display: flex;
-    background-color: rgb(44, 190, 142);
-    align-items: center;
-    justify-content: space-between; 
-    
-}
-/*pour que les images prennent la taille du footer*/
-footer img{
-    height: 50px;
-}
-
-.texte {
-    font-size: 40px;
-    margin: 30px;
-    margin-bottom: 100px;
-    text-align: center;
-    /*pour rappeler la police qu'on veut changer*/
-    font-family: 'Oswald', sans-serif;
-    }
-
-
-
-.menufooter{
-    font-size: 15px;
-}
-
-.logofooter {
-    border-radius: 150rem;
-}
-
-.titrelogo {
-    font-size: 15px;
-}
-/*pour mettre le texte sous le logo. Il faut créer une div en HTML pour lier les 2*/
-.logoettexte {
-    position: relative;
-    text-align: center;
- }
 
  /*page 1:*/
  .lune{
@@ -242,6 +149,8 @@ h5{
     font-size: 1.5em;
 }
 
+
+
 /*page 2 présentation des cultures
 mise en place du tableau*/
 
@@ -269,11 +178,6 @@ mise en place du tableau*/
     opacity:0.8;
     transition: opacity 0.9s;
 }
-
-
-
-
-
 
 .texteracines{
     grid-column: 1 / 2;
@@ -359,11 +263,6 @@ mise en place du tableau*/
     width: 100%;
     height: auto;
 }
-
-
-
-
-
 
 
 /*mise en page de la page3*/
@@ -566,12 +465,12 @@ td {
 /* Page 5 */
 
 .container5{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /*background-color: #1E2337;*/
+    background-color: #f7fbde;
 }
 
 .banniere-titre5{
@@ -580,19 +479,20 @@ td {
 
 #todo-list{
     background-color: white;
-    color: #1E2337;
-    width: 50%;
-    padding: 4rem;
+    /*color: #063f0a;*/
+    width: 80%;
+    padding: 3rem;
 }
+
 #form5{
     display: flex;
 }
 
 #todo-list input{
     width: 100%;
-    color: rgb(44, 43, 43);
+    color: rgb(40, 181, 87);
     font-size: 2rem;
-    border: 1px solid grey;
+    /*border: 1px solid rgb(10, 9, 9);*/
     padding: 1rem;
     border: 1px dashed rgb(105, 19, 105); /*couleur de bordure*/
     border-width: 0px 0px 1px 0px;/*ligne inférieure seulement*/
@@ -602,10 +502,10 @@ td {
     width: 4rem;
     height: 4rem;
 }
-.item5{
+.item5{/*pour définir les conditions de l'item qd on valide ce qu'on doit faire*/
     text-align: justify;
     margin: 1rem;
-    background-color: rgb(222, 221, 221);
+    background-color: rgb(221, 250, 214);
     font-size: 2rem;
     color: rgb(105, 19, 105);
     display: flex;/*pour aligner <p> et <button>*/
@@ -633,12 +533,95 @@ td {
 }
 
 .fa-trash-alt, .fa-check-circle{
-    pointer-events : none; /*Permet de ne pas ajouter un événement à cet élément*/
+    pointer-events: none; /*Permet de ne pas ajouter un événement à cet élément*/
 }
 
 
+/*pour le footer*/
+footer {
+    display: flex;
+    background-color: rgb(44, 190, 142);
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+/*pour que les images prennent la taille du footer*/
+footer img{
+    height: 50px;
+}
 
-/*création du responsive pour afficher me menu burger*/
+.texte {
+    font-size: 40px;
+    margin: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+    /*pour rappeler la police qu'on veut changer*/
+    font-family: 'Oswald', sans-serif;
+    }
+
+.menufooter{
+    font-size: 15px;
+}
+
+.logofooter {
+    border-radius: 150rem;
+}
+
+.titrelogo {
+    font-size: 15px;
+}
+/*pour mettre le texte sous le logo. Il faut créer une div en HTML pour lier les 2*/
+.logoettexte {
+    position: relative;
+    text-align: center;
+ }
+
+
+
+
+/*RESPONSIVE*/
+
+
+/*mise en place du menue burger pour le responsive*/
+
+.nav-list-mobile {
+    position: fixed;
+    top: -50vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+    text-align: center;
+    /*pour que le passage du menu normal au menu responsive se fasse en douceur*/
+    transition: 0.5s;
+    background-color: white;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.nav-list-mobile a {
+    color: green;
+    font-weight: 400;
+}
+
+.navbar-mobile i{
+    /*pour qu'il se place au dessus de tous les autres éléments*/
+    z-index: 999;
+    /**/
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    color: green;
+}
+
+.list-visible{
+    top: 0;
+}
 
 @media screen and (max-width: 700px) {
     .navbar-desktop{
@@ -650,7 +633,14 @@ td {
     }
     .liens {
         display: none;
-    }    
+    }  /*responsive page 5*/
+    #form5{
+        display: flex;
+        flex-direction: column;
+    } 
+    #addButton.button5{
+        align-self: center;
+    } 
 }
 
 
@@ -718,16 +708,13 @@ td {
 }
 
 
-
-
-
 /*responsive page 4*/
 @media screen and (max-width: 730px) and (min-width: 200px){
   .container
   {
       display: flex;
       flex-direction: column;
-      margin: 20 80px 0 80px;;
+      margin: 20px 80px 0 80px;;
   }
 }
 
