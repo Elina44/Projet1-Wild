@@ -563,6 +563,80 @@ td {
     justify-self: center;
 }
 
+/* Page 5 */
+
+.container5{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #1E2337;*/
+}
+
+.banniere-titre5{
+    margin-bottom: 1rem;
+}
+
+#todo-list{
+    background-color: white;
+    color: #1E2337;
+    width: 50%;
+    padding: 4rem;
+}
+#form5{
+    display: flex;
+}
+
+#todo-list input{
+    width: 100%;
+    color: rgb(44, 43, 43);
+    font-size: 2rem;
+    border: 1px solid grey;
+    padding: 1rem;
+    border: 1px dashed rgb(105, 19, 105); /*couleur de bordure*/
+    border-width: 0px 0px 1px 0px;/*ligne inférieure seulement*/
+}
+.button5{
+    border: none;
+    width: 4rem;
+    height: 4rem;
+}
+.item5{
+    text-align: justify;
+    margin: 1rem;
+    background-color: rgb(222, 221, 221);
+    font-size: 2rem;
+    color: rgb(105, 19, 105);
+    display: flex;/*pour aligner <p> et <button>*/
+    align-items: center;
+}
+.item5 p{
+    flex: 1;/*pour prendre le plus de place possible*/
+    padding: 2rem;
+}
+.item5 button{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.item5 button.btn-archive{
+    font-size: 2rem;
+    background-color: rgb(128, 205, 128);
+}
+
+.item5 button.btn-delete{
+    font-size: 2rem;
+    background-color: rgb(188, 102, 102);
+}
+.done{
+    text-decoration: line-through;
+}
+
+.fa-trash-alt, .fa-check-circle{
+    pointer-events : none; /*Permet de ne pas ajouter un événement à cet élément*/
+}
+
+
 
 /*création du responsive pour afficher me menu burger*/
 
