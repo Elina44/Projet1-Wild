@@ -20,7 +20,7 @@ icon.addEventListener("click", function(){
 //Page 5
 const form = document.getElementById('form5'); 
 console.log(form); 
-const todo = document.getElementById('todo'); 
+const todo = document.getElementById('todo'); //la où on écrit
 console.log(todo); 
 let listItems = document.querySelector('.list-items'); 
 console.log(listItems); 
