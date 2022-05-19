@@ -662,6 +662,10 @@ footer img{
         flex-direction: column;
         width: 150%;
     }
+    .balançoire {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 
