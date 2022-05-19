@@ -103,7 +103,7 @@ h3{
 
 .imagerotation{
     display: flex;
-    width: auto;
+    width: 100%;
     margin: 10px 40px 70px 40px;
 }
 
