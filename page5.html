@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--pour mettre favicon cad le logo dans l'onglet de navigation-->
+    <link rel="shortcut icon" type="image/png" href="/Images/favicon-ConvertImage.png">  
+    <!--Idem mais pour apple-->
+    <link rel=”apple-touch-icon” href=”/apple-touch-icon-180×180.png>
+    <!--sur google, choisir la police et copier le lien proposé html ici et copier l'autre partie CSS et le mettre dans la balise souhaitée-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!--Etape 1 : lien téléchargé sur fontawesome pour choisir une icône pour le menu burger-->
+    <script src="https://kit.fontawesome.com/28e1b819a1.js" crossorigin="anonymous"></script>
+    <title>Le jardin des malins</title>
+</head>
+
+<body> 
+    
+    <nav class="navbar-desktop">
+        <div class="herisson">
+            <img src="Images/hérisson.jpg" class="logo" alt="photo de hérisson">
+        </div>
+        <p class="a navbar"><a href="index.html">Bienvenue</a></p>
+        <p class="b navbar"><a href="page1.html">Jardiner avec la Lune</a></p>
+        <p class="c navbar"><a href="page2.html">Choix des plantes</a></p>
+        <p class="d navbar"><a href="page3.html">Rotation des cultures</a></p>
+        <p class="e navbar"><a href="page4.html">Jardiner malin</a></p>
+        <p class="a navbar">Pense bête</p>
+    </nav>
+<!--Pour créer le menu burger-->
+    <nav class="navbar-mobile">
+        <!--Etape 2: lien donné par fontawesome pour le choix de l'image qui va apparaître pour faire le menu-->
+        <i class="fa-solid fa-bars"></i>
+        <div class="nav-list-mobile">
+            <p class="a navbar"><a href="index.html">Bienvenue</a></p>
+            <p class="b navbar"><a href="page1.html">Jardiner avec la Lune</a></p>
+            <p class="c navbar"><a href="page2.html">Choix des plantes</a></p>
+            <p class="d navbar"><a href="page3.html">Rotation des cultures</a></p>
+            <p class="e navbar"><a href="page4.html">Jardiner malin</a></p>
+            <p class="f navbar">Pense bête</p>
+        </div>
+    </nav>
+
+
+    <div class="container5">
+        <div class="banniere-titre5">
+            <h1>Pense bête</h1>
+        </div>
+        <section id="todo-list">
+            <form id="form5">
+                <input type="text" 
+                placeholder="Que dois-je faire ? 🌺" 
+                id="todo"
+                autocomplete="off">
+                <button class="button5" type="submit" id="addButton">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+
+            <!-- Les tâches se placeront dans cette DIV -->
+            <div class="list-items">
+            </div>
+        </section>
+    </div>
+
+    
+    <footer>
+            <div class="liens">
+                <p class="a navbar"><a href="index.html">Bienvenue</a></p>
+                <p class="menufooter"><a href="page1.html">Jardiner avec la Lune</a></p>
+                <p class="menufooter"><a href="page2.html">Choix des plantes</a></p>
+                <p class="menufooter"><a href="page3.html">Rotation des cultures</a></p>
+                <p class="menufooter"><a href="page4.html">Jardiner malin</a></p>
+                <p class="a navbar">Pense bête</p>
+            </div>
+            <div class="logoettexte">
+            <img src="Images/hérisson.jpg" class="logofooter" alt="photo de hérisson">
+            <p class="titrelogo">Le jardin des malins</p>
+            </div>
+            <div class="social">
+                <!--bien mettre l'ancre avant l'image pour que le lien fonctionne-->
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="Reseauxsociaux/instagramcolor.png" alt="image instagram" title="Instagram"></a>
+                <a href="https://fr-fr.facebook.com/" target="_blank"><img src="Reseauxsociaux/facebook.webp" alt="image facebook" title="Facebook"></a>
+                <a href="https://twitter.com/?lang=fr" target="_blank"><img src="Reseauxsociaux/twitterbleu.png" alt="image twitter" title="Twitter"></a>
+            </div>
+                
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

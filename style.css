@@ -1,0 +1,729 @@
+*{
+    list-style-type: none;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+/* création de la barre de navigation */
+nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 10px 30px 10px;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+nav div, nav p{
+    padding-left: 15px;
+}
+
+
+
+/* mise en place du logo*/
+.herisson {
+    grid-column: span 1.5;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.navbar{
+    grid-column-start: 4 / 8;
+    color: green;
+    font-size: 16px;
+}
+
+.logo {
+    max-width: 100%;
+    border-radius: 150rem;
+    grid-row: span 2;
+}
+
+/*mise en page de la page Home*/
+h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.balançoire{
+    width: 80%;
+    height: 500px;
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.paragraphe {
+    text-align: justify;
+    margin: 0 30px 0 30px;
+    font-size: 16px; 
+}
+
+
+ /*page 1:*/
+ .lune{
+    display: block;
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+ }
+
+ .liencalendrierlunaire {
+     text-align: center;
+     text-decoration: underline solid black;
+ }
+
+ .calendrier{
+     color: green;
+ }
+
+h3{
+    font-size: 30px;
+    margin: 70px 50px 30px 50px;
+    text-align: center;
+}
+
+.imagerotation{
+    display: flex;
+    width: auto;
+    margin: 10px 40px 70px 40px;
+}
+
+.haut{
+    width: 50%;
+}
+
+.bas{
+    width: 50%;
+}
+
+
+
+/*page 2*/
+
+h2{
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 50px 10px 50px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 50px 10px 50px;
+}
+
+.page2-texte {
+    padding: 20px;
+    /*pour faire un alinéa*/
+    text-indent: 5em;
+}
+
+/*les titres des images*/
+h5{
+    font-size: 25px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+
+.textepage2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
+
+
+/*page 2 présentation des cultures
+mise en place du tableau*/
+
+.plantes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-gap: 40px;
+    margin: 50px;
+}
+
+.parapage2 {
+    height: 200px;
+}
+/*1ere colonne racines*/
+.pivoine{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+/*pour mettre un peu de transparence qd la souris passe dessus*/
+.plantes img:hover {
+    opacity:0.8;
+    transition: opacity 0.9s;
+}
+
+.texteracines{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/*2ème colonne: couvrantes*/
+.couviolette{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.textecouvrantes{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+/*3è colonne grimpantes*/
+.vigne{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.textegrimpantes{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+/*4è colonne persistantes*/
+.fusain{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+ 
+.textepersistantes{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    width: 100%;
+    height: auto;
+}
+/*5 ècolonne insectes*/
+.marjolaine{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.texteproinsectes{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    width: 100%;
+    height: auto;
+}
+
+.basilic{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.texteantiisectes{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+
+
+/*mise en page de la page3*/
+/*pour supprimer alinéa des puces*/
+
+.texterotation{
+    margin: 25px 25px 15px 25px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding-left: 4em;
+    text-align: justify;
+}
+
+.schemarotation{
+    width: 80%;
+    margin: auto;
+}
+
+.rotation{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 20px 30px 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.texte-surligne{/*pour souligner la légende*/
+    text-decoration: underline;
+}
+
+table img{
+    border-radius: 80px;
+    width: 50px;
+}
+
+td {
+    text-align: justify;
+    width: auto;
+}
+
+
+
+
+/*mise en page page 4*/
+
+.titrepage4{
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+}
+
+
+/*mise en place du tableau*/
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-gap: 1.3em;
+    margin: 70px 25px 20px 25px;
+    
+}
+
+.titre1{
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.jardinenhauteurtexte{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.fraiseraie{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 75%;
+    height: 75%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.titre2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.engraisbiotexte{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.orties{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 75%;
+    height: 75%;
+    align-self: center;
+    justify-self: center;
+}
+
+.titre3{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.assodesplantestexte{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+}
+
+.oeillet{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    width: 75%;
+    height: 90%;
+    align-self: center;
+    justify-self: center;
+}
+
+.titre4{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.economiestexte{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.paillage{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    width: 75%;
+    height: 75%;
+    align-self: center;
+    justify-self: center;
+}
+
+.titre5{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.fuirlesnuisiblestexte{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    align-self: center;
+    justify-self: center;
+}
+
+.cafe{
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+    height: 95%;
+}
+
+/* Page 5 */
+
+.container5{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7fbde;
+}
+
+.banniere-titre5{
+    margin-bottom: 1rem;
+}
+
+#todo-list{
+    background-color: white;
+    /*color: #063f0a;*/
+    width: 80%;
+    padding: 3rem;
+}
+
+#form5{
+    display: flex;
+}
+
+#todo-list input{
+    width: 100%;
+    color: rgb(40, 181, 87);
+    font-size: 2rem;
+    /*border: 1px solid rgb(10, 9, 9);*/
+    padding: 1rem;
+    border: 1px dashed rgb(105, 19, 105); /*couleur de bordure*/
+    border-width: 0px 0px 1px 0px;/*ligne inférieure seulement*/
+}
+.button5{
+    border: none;
+    width: 4rem;
+    height: 4rem;
+}
+.item5{/*pour définir les conditions de l'item qd on valide ce qu'on doit faire*/
+    text-align: justify;
+    margin: 1rem;
+    background-color: rgb(221, 250, 214);
+    font-size: 2rem;
+    color: rgb(105, 19, 105);
+    display: flex;/*pour aligner <p> et <button>*/
+    align-items: center;
+}
+.item5 p{
+    flex: 1;/*pour prendre le plus de place possible*/
+    padding: 2rem;
+}
+.item5 button{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.item5 button.btn-archive{
+    font-size: 2rem;
+    background-color: rgb(128, 205, 128);
+}
+
+.item5 button.btn-delete{
+    font-size: 2rem;
+    background-color: rgb(188, 102, 102);
+}
+.done{
+    text-decoration: line-through;
+}
+
+.fa-trash-alt, .fa-check-circle{
+    pointer-events: none; /*Permet de ne pas ajouter un événement à cet élément*/
+}
+
+
+/*pour le footer*/
+footer {
+    display: flex;
+    background-color: rgb(44, 190, 142);
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+/*pour que les images prennent la taille du footer*/
+footer img{
+    height: 50px;
+}
+
+.texte {
+    font-size: 40px;
+    margin: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+    /*pour rappeler la police qu'on veut changer*/
+    font-family: 'Oswald', sans-serif;
+    }
+
+.menufooter{
+    font-size: 15px;
+}
+
+.logofooter {
+    border-radius: 150rem;
+}
+
+.titrelogo {
+    font-size: 15px;
+}
+/*pour mettre le texte sous le logo. Il faut créer une div en HTML pour lier les 2*/
+.logoettexte {
+    position: relative;
+    text-align: center;
+ }
+
+
+
+
+/*RESPONSIVE*/
+
+
+/*mise en place du menue burger pour le responsive*/
+
+.nav-list-mobile {
+    position: fixed;
+    top: -50vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+    text-align: center;
+    /*pour que le passage du menu normal au menu responsive se fasse en douceur*/
+    transition: 0.5s;
+    background-color: white;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.nav-list-mobile a {
+    color: green;
+    font-weight: 400;
+}
+
+.navbar-mobile i{
+    /*pour qu'il se place au dessus de tous les autres éléments*/
+    z-index: 999;
+    /**/
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    color: green;
+}
+
+.list-visible{
+    top: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-desktop{
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+    .liens {
+        display: none;
+    }  /*responsive page 5*/
+    #form5{
+        display: flex;
+        flex-direction: column;
+    } 
+    #addButton.button5{
+        align-self: center;
+    } 
+}
+
+
+/*Fin du menu burger*/
+
+
+
+
+
+/*page 1 pour tourner les image en responsive*/
+@media screen and (max-width: 730px) and (min-width: 300px) {
+    .imagerotation {
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+    }
+    .balançoire {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+
+/*mise en responsive page 2 avec passage de 3 à 2 images puis à 1 image*/
+@media screen and (max-width: 930px) {
+    .plantes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+        gap: 30px;
+        width: auto;        
+    }
+    .page2-texte {
+        padding: 15px;
+        text-indent: 0%;
+    }
+    .parapage2 {
+        height: 100%;
+        text-align: justify;
+    }
+    .textepage2{
+        padding: 35px;
+        text-align: center;
+    }
+    /*.liens{/*pour faire disparaître le menu dans le footer
+        display: none;
+    }*/
+} 
+
+
+/* responsive page 3*/
+@media screen and (max-width: 820px) {
+    .rotation {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+        margin: 15px 30px;
+    }
+    .textetable {
+        margin: 10px 35px 25px 0px;
+        width: auto;
+        align-items: center;
+    }
+    .schemarotation {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+/*responsive page 4*/
+@media screen and (max-width: 730px) and (min-width: 200px){
+  .container
+  {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 80px 0 80px;;
+  }
+}
+
