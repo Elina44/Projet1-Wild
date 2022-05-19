@@ -656,7 +656,7 @@ footer img{
 
 
 /*page 1 pour tourner les image en responsive*/
-@media screen and (max-width: 730px) and (min-width: 300px) {
+@media screen and (max-width: 730px) /*and (min-width: 300px)*/ {
     .imagerotation {
         display: flex;
         flex-direction: column;
