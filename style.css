@@ -108,11 +108,11 @@ h3{
 }
 
 .haut{
-    width: 50%;
+    width: 100%;
 }
 
 .bas{
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -660,7 +660,7 @@ footer img{
     .imagerotation {
         display: flex;
         flex-direction: column;
-        width: 150%;
+        width: 100%;
     }
     .balançoire {
         margin: 0;
