@@ -120,6 +120,10 @@ h3{
 
 /*page 2*/
 
+.bodypage2{
+    width: 100%;
+}
+
 h2{
     font-size: 20px;
     text-align: justify;
@@ -160,12 +164,14 @@ mise en place du tableau*/
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 2fr);
     grid-gap: 40px;
-    margin: 50px;
+    padding: 50px;
 }
 
 .parapage2 {
     height: 200px;
 }
+
+
 /*1ere colonne racines*/
 .pivoine{
     grid-column: 1 / 2;
@@ -278,7 +284,6 @@ mise en place du tableau*/
 ul{
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 li{
@@ -287,8 +292,8 @@ li{
 }
 
 .schemarotation{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    padding: 10px;
 }
 
 .rotation{
@@ -677,12 +682,17 @@ footer img{
 
 /*mise en responsive page 2 avec passage de 3 à 2 images puis à 1 image*/
 @media screen and (max-width: 930px) {
+    /*.bodypage2{
+        width: 100%;
+    }*/
+
     .plantes {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-        gap: 30px;
-        width: auto;        
+        /*gap: 30px;*/
+        width: 100%;
     }
+
     .page2-texte {
         padding: 15px;
         text-indent: 0%;
@@ -694,6 +704,9 @@ footer img{
     .textepage2{
         padding: 35px;
         text-align: center;
+    }
+    .racines{
+        text-align: center; 
     }
     /*.liens{/*pour faire disparaître le menu dans le footer
         display: none;
@@ -707,17 +720,20 @@ footer img{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 90%;
-        margin: 15px 30px;
+        width: 100%;
+        margin: 15px;
     }
     .textetable {
         margin: 10px 35px 25px 0px;
-        width: auto;
+        width: 100%;
         align-items: center;
     }
     .schemarotation {
         width: 100%;
         align-items: center;
+    }
+    .ulrotation{
+        margin-right: 30px;
     }
 }
 
